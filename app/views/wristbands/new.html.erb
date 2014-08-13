@@ -1,0 +1,13 @@
+<h1>Welcome! Who are you?</h1>
+
+<div>
+  <%= form_tag wristbands_url do %>
+    <div>
+      <%= text_field_tag :nickname %>
+    </div>
+
+    <div>
+      <%= submit_tag "Open Sesame" %>
+    </div>
+  <% end %>
+</div>
