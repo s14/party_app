@@ -1,3 +1,9 @@
-<h1>Welcome to the party!</h1>
+<h1>Welcome to the party, <span style="color: <%= session[:wristband] %>"><%= session[:person] %></span>!</h1>
+
+<% if session[:wristband] == "green" %>
+  <p>Have a cold one!</p>
+<% else %>
+  <p>Sorry :/ have a coke.</p>
+<% end %>
 
 <p><%= link_to "Sign in", new_wristband_url %></p>
